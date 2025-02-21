@@ -10,24 +10,23 @@
     <title>Sidebar Menu</title>
 </head>
 <body>
-    <nav class="sidebar-menu">
-        <!-- <div class="logo">
-            <img src="./images/logo.svg" alt="Vet logo">
-        </div> -->
-
-        <div class="hamburguer-btn">
-            <img src="./images/menu.svg" alt="">
+    <nav class="sidebar">
+        <div class="sidebar-header">
+            <a href="#" class="header-logo">
+                <img src="./images/logo.svg" alt="Vet logo">
+            </a>
+            <button class="hamburguer-btn toggler">
+                <img src="./images/menu.svg" alt="menu-toggle">
+            </button>
         </div>
 
-        <ul>
-            <div class="search-bg">
-                <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><img src="./images/search.svg" alt=""></span>
-                        <span class="txt-link">Buscar</span>
-                    </a>
-                </li>
-            </div>
+        <ul class="menu-list">
+            <li class="item-menu search-bg">
+                <a href="#">
+                    <span class="icon"><img src="./images/search.svg" alt=""></span>
+                    <span class="txt-link">Buscar</span>
+                </a>
+            </li>
 
             <li class="item-menu">
                 <a href="#">
@@ -65,8 +64,18 @@
                 </a>
             </li>
         </ul>
-        <div class="log-out">
-            <img src="./images/log-out.svg" alt="log-out button">
+        <div class="sidebar-footer">
+            <div class="profile">
+                <img src="./images/photo.jpg" alt="Avatar">
+            </div>
+            <div class="info">
+                <h3>Eleanor Pena</h3>
+                <p>Veterinária</p>
+            </div>
+
+            <button href="#" class="log-out">
+                <img src="./images/log-out.svg" alt="log-out button">
+            </button>
         </div>
     </nav>
 
